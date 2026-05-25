@@ -1,0 +1,116 @@
+.proyectos{
+    background-color: #050505;
+    color: white;
+    padding: 6rem 5%;
+}
+
+.proyectos-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.proyectos h2{
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.proyectos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 2rem;
+}
+
+.proyecto-card{
+    background-color: #111111;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #1f1f1f;
+    transition: 0.3s;
+}
+
+.proyecto-card:hover{
+    transform: translateY(-8px);
+    border-color: #00ff88;
+}
+
+.proyecto-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.proyecto-content{
+    padding: 2rem;
+}
+
+.proyecto-content h3{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.proyecto-content p{
+    color: #b5b5b5;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tags span{
+    background-color: #0f0f0f;
+    border: 1px solid #2a2a2a;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    color: #00ff88;
+}
+
+@media(max-width:768px){
+
+    .proyectos h2{
+        font-size: 2.2rem;
+    }
+
+}
+
+.repo-btn{
+    background-color: #00ff88;
+    color: black;
+    padding: 0.8rem 1.4rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.repo-btn:hover{
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.demo-btn{
+    background-color: transparent;
+    color: #00ff88;
+    border: 1px solid #00ff88;
+    padding: 0.8rem 1.4rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.demo-btn:hover{
+    background-color: #00ff88;
+    color: black;
+}
+.buttons-container{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}

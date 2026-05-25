@@ -1,0 +1,56 @@
+.habilidades{
+    background-color: #050505;
+    color: white;
+    padding: 6rem 5%;
+}
+
+.habilidades-container{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.habilidades h2{
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.habilidades-desc{
+    color: #b5b5b5;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 1.5rem;
+}
+
+.skill-box{
+    background-color: #111111;
+    border: 1px solid #1f1f1f;
+    padding: 2rem;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.skill-box:hover{
+    transform: translateY(-5px);
+    border-color: #00ff88;
+    color: #00ff88;
+    box-shadow: 0 0 20px rgba(0,255,136,0.15);
+}
+
+@media(max-width:768px){
+
+    .habilidades h2{
+        font-size: 2.2rem;
+    }
+
+}
