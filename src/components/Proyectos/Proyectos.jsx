@@ -4,6 +4,7 @@ import gestionCitas from '../../assets/gestioncitas.png'
 import logosoundvibe from '../../assets/logosoundvibe.png'
 import Escuela from '../../assets/escuela.png'
 import senatiLogo from '../../assets/senatilogo.jpg'
+import loginApp from '../../assets/autenticacion.png'
 
 const Proyectos = () => {
 
@@ -50,12 +51,12 @@ const Proyectos = () => {
     },
 
     {
-      titulo: 'Próximo Proyecto',
+      titulo: 'Login App',
       descripcion:
-        'Descripción del proyecto. Explica brevemente qué hace y para qué sirve.',
-      imagen: null,
+        'login con autenticación y dashboard para administrar usuarios, roles y permisos.',
+      imagen: loginApp,
       tecnologias: ['React', 'Laravel', 'MySQL'],
-      github: '#',
+      github: 'https://github.com/Vrak23/loginApp',
       demo: '#'
     }
 
