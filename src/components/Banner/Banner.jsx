@@ -23,7 +23,7 @@ const Banner = () => {
 
         <h1 className="hero-title">
           Rodrigo <br />
-          <span className="text-green">Portfolio</span>
+          <span className="text-green">Portafolio</span>
         </h1>
 
         <h2 className="hero-subtitle">
