@@ -5,6 +5,7 @@ import logosoundvibe from '../../assets/logosoundvibe.png'
 import Escuela from '../../assets/escuela.png'
 import senatiLogo from '../../assets/senatilogo.jpg'
 import loginApp from '../../assets/autenticacion.png'
+import vendefacilLogo from '../../assets/vendefacil-logo.png'
 
 const Proyectos = () => {
 
@@ -58,6 +59,16 @@ const Proyectos = () => {
       tecnologias: ['React', 'Laravel', 'MySQL'],
       github: 'https://github.com/Vrak23/loginApp',
       demo: '#'
+    },
+
+    {
+      titulo: 'VendeFacil',
+      descripcion:
+        'Aplicación web para compra de productos tecnológicos.',
+      imagen: vendefacilLogo,
+      tecnologias: ['React', 'JavaScript', 'CSS'],
+      github: 'https://github.com/Vrak23/vendefacil',
+      demo: 'https://vendefacil-gold.vercel.app/'
     }
 
   ]
