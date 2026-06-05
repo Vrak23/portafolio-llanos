@@ -1,61 +1,74 @@
-.servicios{
-    background-color: #0b0b0b;
-    color: white;
+.servicios {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
     padding: 6rem 5%;
 }
 
-.servicios-container{
+.servicios-container {
     max-width: 1200px;
     margin: auto;
 }
 
-.servicios h2{
+.servicios h2 {
     font-size: 3rem;
+    font-weight: 800;
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #ffffff 40%, #a0aec0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.servicios-grid{
+.servicios-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
 }
 
-.servicio-card{
-    background-color: #111111;
-    border: 1px solid #1f1f1f;
+.servicio-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
     border-radius: 16px;
-    padding: 2rem;
-    transition: 0.3s;
+    padding: 2.5rem 2rem;
+    transition: var(--transition-smooth);
 }
 
-.servicio-card:hover{
+.servicio-card:hover {
     transform: translateY(-8px);
-    border-color: #00ff88;
-    box-shadow: 0 0 20px rgba(0,255,136,0.12);
+    border-color: rgba(0, 255, 136, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 255, 136, 0.03), 0 0 1px rgba(0, 255, 136, 0.1);
 }
 
-.servicio-number{
-    color: #00ff88;
+.servicio-number {
+    color: var(--color-accent);
     font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+    font-family: var(--font-title);
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
 }
 
-.servicio-card h3{
+.servicio-card h3 {
     margin-bottom: 1rem;
     font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
 }
 
-.servicio-card p{
-    color: #b5b5b5;
+.servicio-card p {
+    color: var(--text-muted);
     line-height: 1.7;
+    font-size: 0.95rem;
 }
 
-@media(max-width:768px){
-
-    .servicios h2{
-        font-size: 2.2rem;
+@media(max-width:768px) {
+    .servicios {
+        padding: 4rem 5%;
     }
 
+    .servicios h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
 }

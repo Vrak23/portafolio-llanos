@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Banner.css'
 import miFoto from '../../assets/mifoto.jpeg'
 
@@ -27,22 +28,23 @@ const Banner = () => {
         </h1>
 
         <h2 className="hero-subtitle">
-          Estudiante de Desarrollo de Software
+          Estudiante de Informatica y Desarrollo de Aplicaciones Web
         </h2>
 
         <p className="hero-description">
-          Desarrollo aplicaciones web modernas utilizando React,
-          JavaScript y tecnologías frontend.
+          Construyo interfaces web modernas, funcionales y adaptables,
+          enfocandome en aprender, mejorar y crear soluciones digitales
+          cada vez mas completas.
         </p>
 
         <div className="hero-buttons">
-          <a href="#proyectos" className="btn btn-primary">
+          <Link to="/projects" className="btn btn-primary">
             Ver Proyectos
-          </a>
+          </Link>
 
-          <a href="#contacto" className="btn btn-secondary">
+          <Link to="/contact" className="btn btn-secondary">
             Contacto
-          </a>
+          </Link>
         </div>
 
       </div>

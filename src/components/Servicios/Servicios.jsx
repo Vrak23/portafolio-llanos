@@ -4,27 +4,27 @@ const Servicios = () => {
 
   const servicios = [
     {
-      titulo: 'Desarrollo Web',
+      titulo: 'Paginas Web',
       descripcion:
-        'Creación de aplicaciones y páginas web modernas utilizando React.'
+        'Creacion de sitios modernos, ordenados y adaptables para presentar informacion, proyectos o servicios.'
     },
 
     {
-      titulo: 'Diseño Responsive',
+      titulo: 'Interfaces Responsive',
       descripcion:
-        'Interfaces adaptables para computadoras, tablets y móviles.'
+        'Diseno y construccion de interfaces que se adaptan correctamente a celulares, tablets y computadoras.'
     },
 
     {
-      titulo: 'UI / UX',
+      titulo: 'Sistemas Web Basicos',
       descripcion:
-        'Diseño de experiencias limpias, modernas y fáciles de usar.'
+        'Desarrollo de registros, listados, formularios, paneles simples y conexion con bases de datos.'
     },
 
     {
-      titulo: 'Mantenimiento',
+      titulo: 'Aplicaciones en Formacion',
       descripcion:
-        'Optimización y mejora de proyectos web existentes.'
+        'Creacion y mejora de proyectos con tecnologias como React, Bootstrap, PHP, Laravel y MySQL.'
     }
   ]
 

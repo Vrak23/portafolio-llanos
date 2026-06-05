@@ -1,30 +1,16 @@
+import { BrowserRouter as Router } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
-import Banner from './components/Banner/Banner'
-import Perfil from './components/Perfil/Perfil'
-import Habilidades from './components/Habilidades/Habilidades'
-import Servicios from './components/Servicios/Servicios'
-import Proyectos from './components/Proyectos/Proyectos'
-import Certificados from './components/Certificados/Certificados'
-import Contactos from './components/Contactos/Contactos'
+import AppRoutes from './routes/AppRoutes'
 import Footer from './components/Footer/Footer'
-
-
 import './App.css'
 
 function App() {
-
   return (
-    <>
+    <Router>
       <Navbar />
-      <Banner />
-      <Perfil />
-      <Habilidades />
-      <Servicios />
-      <Proyectos />
-      <Certificados />
-      <Contactos />
+      <AppRoutes />
       <Footer />
-    </>
+    </Router>
   )
 }
 

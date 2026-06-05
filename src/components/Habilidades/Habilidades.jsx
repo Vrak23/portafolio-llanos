@@ -7,14 +7,14 @@ const Habilidades = () => {
     'CSS',
     'JavaScript',
     'React',
+    'Bootstrap',
+    'PHP',
+    'Laravel',
+    'MySQL',
     'Git',
     'GitHub',
     'Responsive Design',
-    'MySQL',
-    'Laravel',
-    'Vite',
-    'Figma',
-    'Python'
+    'Vite'
   ]
 
   return (
@@ -27,12 +27,13 @@ const Habilidades = () => {
         </span>
 
         <h2>
-          Tecnologías y herramientas
+          Tecnologias y herramientas
         </h2>
 
         <p className="habilidades-desc">
-          Tecnologías que utilizo para construir interfaces,
-          aplicaciones web y proyectos modernos.
+          Tecnologias que utilizo en proyectos academicos y personales
+          para crear interfaces, aplicaciones web y soluciones adaptables
+          a distintos dispositivos.
         </p>
 
         <div className="skills-grid">

@@ -1,50 +1,47 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { NavLink, Link } from 'react-router-dom'
+import { navbarLinks } from './navbar.config'
 import './Navbar.css'
 
 const Navbar = () => {
-
   const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <nav className="navbar">
-
-      <div className="navbar-logo">
-        <span className="text-green">Rodrigo</span> Portafolio
-      </div>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <Link to="/" className="navbar-logo" onClick={() => setIsOpen(false)}>
+        <span className="logo-accent">Rodrigo</span>
+        <span className="logo-name">Portafolio</span>
+      </Link>
 
       <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <a href="#perfil" onClick={() => setIsOpen(false)}>Perfil</a>
-
-        <a href="#tech-stack" onClick={() => setIsOpen(false)}>
-          Habilidades
-        </a>
-
-        <a href="#servicios" onClick={() => setIsOpen(false)}>
-          Servicios
-        </a>
-
-        <a href="#proyectos" onClick={() => setIsOpen(false)}>
-          Proyectos
-        </a>
-
-        <a href="#certificados" onClick={() => setIsOpen(false)}>
-          Certificados
-        </a>
-
-        <a href="#contacto" onClick={() => setIsOpen(false)}>
-          Contacto
-        </a>
+        {navbarLinks.map((link, index) => (
+          <NavLink
+            key={index}
+            to={link.path}
+            className={({ isActive }) => (isActive ? 'active-link' : '')}
+            onClick={() => setIsOpen(false)}
+          >
+            {link.name}
+          </NavLink>
+        ))}
       </div>
 
       <div
-        className="navbar-toggle"
+        className={`navbar-toggle ${isOpen ? 'active' : ''}`}
         onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle menu"
       >
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
-
     </nav>
   )
 }
