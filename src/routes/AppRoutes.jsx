@@ -5,6 +5,7 @@ import Projects from '../pages/Projects'
 import Certificates from '../pages/Certificates'
 import Contact from '../pages/Contact'
 import ProjectDetail from '../pages/ProjectDetail'
+import ProtectedAdminRoute from '../pages/admin/ProtectedAdminRoute'
 
 const AppRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const AppRoutes = () => {
       <Route path="/projects/:slug" element={<ProjectDetail />} />
       <Route path="/certificates" element={<Certificates />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/admin" element={<ProtectedAdminRoute />} />
       {/* Fallback redirecting to Home page */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

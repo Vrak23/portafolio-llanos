@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         <span className="footer-copy">
-          © 2026 Rodrigo - Todos los derechos reservados
+          © <Link to="/admin" className="footer-admin-link">2026</Link> Rodrigo - Todos los derechos reservados
         </span>
 
       </div>
